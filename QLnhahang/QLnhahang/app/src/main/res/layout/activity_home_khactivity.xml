@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.HomeKHActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_displayhome_XemBan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/imgXemBan"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:onClick="onClickDatBan"
+            android:src="@drawable/an" />
+
+        <TextView
+            android:id="@+id/txtXemBan"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="Đặt bàn"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/imgXemBan"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/muli_black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtXemBan"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onClickXemDatBan"
+            android:text="xem bàn đã đặt"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
